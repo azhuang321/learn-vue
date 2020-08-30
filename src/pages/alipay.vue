@@ -3,7 +3,8 @@
 </template>
 
 <script>
- export default {
-   name:'Alipay'
- }
+export default {
+  name:'alipay'
+}
+
 </script>

@@ -1,9 +1,13 @@
 <template>
-  <div>orderList</div>
+  <div>order-list</div>
 </template>
 
 <script>
 export default {
-  name:'orderList'
+  name: "orderList"
 }
 </script>
+
+<style scoped>
+
+</style>
