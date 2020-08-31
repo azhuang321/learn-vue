@@ -21,6 +21,20 @@
         <div class="header-logo">
           <a href="/#/index"></a>
         </div>
+        <div class="header-menu">
+          <div class="item-menu">
+            <span>小米手机</span>
+            <div class="children"></div>
+          </div>
+          <div class="item-menu">
+            <span>RedMi手机</span>
+            <div class="children"></div>
+          </div>
+          <div class="item-menu">
+            <span>电视</span>
+            <div class="children"></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -106,6 +120,25 @@ export default {
            &:hover:before {
              margin-left: -55px;
              transition: margin 0.2s;
+           }
+         }
+       }
+       .header-menu {
+         display: inline-block;
+         width: 643px;
+         padding-left: 209px;
+         .item-menu {
+           display: inline-block;
+           color: #333333;
+           font-weight: bold;
+           font-size: 16px;
+           line-height: 112px;
+           margin-right: 20px;
+           span{
+             cursor:pointer;
+           }
+           &:hover{
+
            }
          }
        }
