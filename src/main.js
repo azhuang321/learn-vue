@@ -6,7 +6,13 @@ import VueAxios from 'vue-axios'
 import App from './App.vue';
 
 // 根据前端跨域方式做调整
-axios.defaults.baseURL = '/api';
+// axios.defaults.baseURL = '/api';
+
+import env from './env'
+// 根据环境变量获取不同的请求地址
+axios.defaults.baseURL = env.baseURL;
+
+
 
 //返回值接口拦截
 axios.interceptors.response.use(function (response) {
