@@ -2,7 +2,51 @@
   <div class="index">
     <div class="container">
       <div class="swiper-box">
-
+        <div class="nav-menu">
+          <div class="menu-wrap">
+            <li class="menu-item">
+              <a href="javascript:;">手机 电话卡</a>
+              <div class="children">
+                <ul v-for=" (item,i) in menuList" v-bind:key="i">
+                  <li v-for=" (sub,j) in item" v-bind:key="j">
+                    <a v-bind:href=" sub ? '/#/product/' + sub.id : ''">
+                      <img v-bind:src="sub ? sub.img : '/imgs/item-box-1.png'" alt="">
+                      {{ sub ? sub.name : '小米8' }}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:;">电视 盒子</a>
+              <div class="children"></div>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:;">笔记本 平板</a>
+              <div class="children"></div>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:;">家电 插线板</a>
+              <div class="children"></div>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:;">出行 穿戴</a>
+              <div class="children"></div>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:;">智能路由器</a>
+              <div class="children"></div>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:;">电源配件</a>
+              <div class="children"></div>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:;">生活箱包</a>
+              <div class="children"></div>
+            </li>
+          </div>
+        </div>
         <swiper :options="swiperOptions">
           <swiper-slide v-for="(item,index) in slideList" v-bind:key="index">
             <a v-bind:href="'/#/product/' + item.id"><img v-bind:src="item.img"></a>
@@ -72,6 +116,27 @@ export default {
           id: '42'
           , img: '/imgs/slider/slide-5.jpg'
         }
+      ]
+      , menuList: [
+        [
+          {
+            id: 30,
+            img: '/imgs/item-box-1.png'
+            , name: '小米cc1'
+          }, {
+          id: 31,
+          img: '/imgs/item-box-2.png',
+          name: '小米cc2'
+        }, {
+          id: 32,
+          img: '/imgs/item-box-3.png',
+          name: '小米cc3'
+        }, {
+          id: 33,
+          img: '/imgs/item-box-4.png',
+          name: '小米cc4'
+        }
+        ], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]
       ]
     }
   }
