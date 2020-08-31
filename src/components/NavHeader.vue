@@ -35,6 +35,12 @@
             <div class="children"></div>
           </div>
         </div>
+        <div class="header-search">
+          <div class="wrapper">
+            <input type="text" name="keyword">
+            <a href="javascript:;"></a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -139,6 +145,31 @@ export default {
            }
            &:hover{
 
+           }
+         }
+       }
+       .header-search{
+         width: 319px;
+         .wrapper {
+           height: 50px;
+           border: 1px solid #e0e0e0;
+           display: flex;
+           align-items: center;
+           input {
+             border: none;
+             border-right: 1px solid #e0e0e0;
+             box-sizing: border-box;
+             width: 264px;
+             height: 50px;
+             padding-left: 14px;
+           }
+           a {
+             display: inline-block;
+             width: 18px;
+             height: 18px;
+             background: url("/imgs/icon-search.png") no-repeat center;
+             background-size: contain;
+             margin-left: 17px;
            }
          }
        }
