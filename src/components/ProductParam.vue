@@ -29,6 +29,7 @@
       initHeight(){
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
         this.isFix = scrollTop > 152 ? true : false;
+        console.dir(this.isFix)
       }
     },
     destroyed() {
