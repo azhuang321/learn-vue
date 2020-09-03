@@ -122,8 +122,7 @@ export default {
   name: "nav-header"
   ,data(){
     return {
-      username : 'azhuang'
-      ,phoneList:[]
+      phoneList:[]
     }
   }
   ,filters:{
