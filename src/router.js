@@ -3,7 +3,7 @@ import Router from 'vue-router';
 
 import Home from "./pages/home";
 import Index from "./pages/index";
-import Product from "./pages/product";
+// import Product from "./pages/product";
 import Detail from "./pages/detail";
 
 import Cart from "./pages/cart";
@@ -34,7 +34,7 @@ export default new Router({
                 , {
                     path: '/product/:id'
                     , name: 'product'
-                    , component: Product
+                    , component: resolve => require(['./pages/product.vue'],resolve)
                 }
                 , {
                     path: '/detail/:id'
