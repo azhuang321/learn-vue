@@ -17,6 +17,7 @@ module.exports = {
     // indexPath:'index2.html',
     // lintOnSave:false,
     productionSourceMap:true,
+    //删除预加载标签
     chainWebpack:(config)=>{
         config.plugins.delete('prefetch');
     }
